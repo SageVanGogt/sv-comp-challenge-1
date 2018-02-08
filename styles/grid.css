@@ -22,8 +22,14 @@ header {
 aside {
   grid-area: 1 / 4 / 4 / 6;
   background: url('../images/background-pic.jpeg');
-  background-size: 100%;
+  background-size: 100vh;
   background-repeat: no-repeat;
+}
+
+article {
+  display:flex;
+  justify-content: center;
+  align-items: center
 }
 
 .item1 {
