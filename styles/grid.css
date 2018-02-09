@@ -1,3 +1,5 @@
+
+/* Layout */
 body {
   margin: 0;
   width: 100vw;
@@ -5,18 +7,25 @@ body {
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows:  repeat(3, 33.33%);
+  font-family: 'Ubuntu', sans-serif;
 }
 
-main {
-
-/*  display:grid;
-  grid-area: 1 / 1 / 4 / 4;
-  border: 5px solid black;*/
+/* Article flex */
+article {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
+/* Grid Boxes */
 header {
   grid-area: 1 / 1 / 2 / 3;
   background-color: #DEDEDE;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center
 }
 
 aside {
@@ -24,12 +33,6 @@ aside {
   background: url('../images/background-pic.jpeg');
   background-size: 100vh;
   background-repeat: no-repeat;
-}
-
-article {
-  display:flex;
-  justify-content: center;
-  align-items: center
 }
 
 .item1 {
@@ -65,4 +68,19 @@ article {
 .item7 {
   grid-area: 3 / 3 / 4 / 4;
   background-color: #6C6C6C;
+}
+
+/* Header Links */
+.header__buttons {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding:10px 20px;
+  align-items: center;
 }
