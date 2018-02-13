@@ -1,13 +1,10 @@
+
+/* Med screen size responsive*/
 @media screen and (max-width: 850px) {
   body {
   display: grid;
   grid-template-columns: repeat(4, 25%);
   grid-template-rows:  repeat(4, 25%);
-}
-
- /* Grid Boxes */
-header {
-  grid-area: 1 / 1 / 2 / 2;
 }
 
 h1 {
@@ -16,6 +13,11 @@ h1 {
 
 p  {
   font-size: 1vw;
+}
+
+ /* Grid Boxes */
+header {
+  grid-area: 1 / 1 / 2 / 2;
 }
 
 aside {
@@ -75,16 +77,12 @@ aside {
   grid-area: 1 / 4 / 2 / 5;
 }
 
+/* Mobile Media Query */
 @media screen and (max-width: 600px) {
   body {
   display: grid;
   grid-template-columns: repeat(3, 33.33%);
   grid-template-rows:  repeat(5, 20%);
-}
-
- /* Grid Boxes */
-header {
-  grid-area: 1 / 1 / 2 / 3;
 }
 
 h1 {
@@ -99,6 +97,11 @@ p  {
 
 .header__buttons {
   font-size: 3.7vw;
+}
+
+ /* Grid Boxes */
+header {
+  grid-area: 1 / 1 / 2 / 3;
 }
 
 aside {
