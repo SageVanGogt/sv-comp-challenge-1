@@ -8,7 +8,10 @@
  /* Grid Boxes */
 header {
   grid-area: 1 / 1 / 2 / 2;
- 
+}
+
+h1 {
+  margin-left: 10%;
 }
 
 aside {
@@ -52,6 +55,20 @@ aside {
   grid-area: 4 / 2 / 5 / 3;
   background-color: #6C6C6C;
 }
+
+.item8 {
+  grid-area: 2 / 3 / 3 / 4;
+  z-index:1;
+  margin-top: 88%;
+}
+
+.item9 {
+  grid-area: 2 / 4 / 3 / 5;
+  margin-top: 88%;
+}
+
+.item10 {
+  grid-area: 1 / 4 / 2 / 5;
 }
 
 @media screen and (max-width: 600px) {
@@ -64,7 +81,15 @@ aside {
  /* Grid Boxes */
 header {
   grid-area: 1 / 1 / 2 / 3;
- 
+}
+
+h1 {
+  font-size: 6vw;
+  margin-left: 0;
+}
+
+.header__buttons {
+  font-size: 3.7vw;
 }
 
 aside {
@@ -109,5 +134,18 @@ aside {
   background-color: #6C6C6C;
 }
 
+.item8 {
+  grid-area: 2 / 1 / 4 / 4;
+  margin: 0;
+}
+
+.item9 {
+  grid-area: 2 / 3 / 4 / 4;
+  margin: 0;
+}
+
+.item10 {
+  grid-area: 2 / 3 / 3 / 4;
+}
 
 }
