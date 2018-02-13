@@ -12,6 +12,12 @@ body {
 
 h1 {
   font-size: 4vw;
+  margin: 0;
+}
+
+p {
+  font-size: 2vh;
+  width: 80%;
 }
 
 /* Article flex */
@@ -127,32 +133,41 @@ aside {
   grid-area: 2 / 4 / 3 / 5;
   z-index:1;
   display: flex;
-  align-items: left;
-  margin-left: 8%
+  justify-content: flex-start;
+  align-items: center;
 }
 
 .item9 {
   grid-area: 2 / 5 / 3 / 6;
   z-index:1;
-  margin-left: 64%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .item10 {
   grid-area: 1 / 5 / 2 / 6;
   z-index: 1;
-  display: block;
-  margin-left: 70%;}
-
+  display: flex;
+  justify-content: flex-end;
+}
 
 /* Header Links */
 .header__buttons {
   font-size: 1.4vw;
 }
 
-header a {
+.header__buttons a img {
+  height: 1.7vh;
+}
+
+.header__buttons a {
   color: black;
   text-decoration: none;
   border: 2px solid black;
   padding: 1vh 2vw;
   align-items: center;
+  transition: transform 0.3s ease-in-out;
 }
+
+
